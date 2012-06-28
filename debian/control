@@ -1,0 +1,34 @@
+Source: libsuinput
+Priority: extra
+Maintainer: Tuomas Jorma Juhani Räsänen <tuomasjjrasanen@tjjr.fi>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libudev-dev
+Standards-Version: 3.9.3
+Section: libs
+Homepage: http://tjjr.fi/sw/libsuinput
+
+Package: libsuinput-dev
+Section: libdevel
+Architecture: any
+Depends: libsuinput-4 (= ${binary:Version}), ${misc:Depends}
+Description: thin userspace wrapper library on top of Linux uinput kernel module
+ Libsuinput introduces several C functions which aim to help in uinput
+ device configuration and usage. All functions operate on uinput file
+ descriptors and therefore libsuinput just complements the standard
+ ioctl-interface. User is free to mix ioctl-commands and suinput
+ function calls as she sees fit. Hence, libsuinput is considered as a
+ thin wrapper.
+ .
+ This package provides development files.
+
+
+Package: libsuinput-4
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libudev0
+Description: thin userspace wrapper library on top of Linux uinput kernel module
+ Libsuinput introduces several C functions which aim to help in uinput
+ device configuration and usage. All functions operate on uinput file
+ descriptors and therefore libsuinput just complements the standard
+ ioctl-interface. User is free to mix ioctl-commands and suinput
+ function calls as she sees fit. Hence, libsuinput is considered as a
+ thin wrapper.
+ .
