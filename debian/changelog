@@ -1,3 +1,9 @@
+libsuinput (0.5-0~tjjr1~quantal1) quantal; urgency=low
+
+  * Backported to Ubuntu 12.10 (Quantal Quetzal)
+
+ -- Tuomas Jorma Juhani Räsänen <tuomasjjrasanen@tjjr.fi>  Sun, 01 Jul 2012 16:59:30 +0300
+
 libsuinput (0.5-0~tjjr1) unstable; urgency=low
 
   * Initial release
