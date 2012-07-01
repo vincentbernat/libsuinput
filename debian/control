@@ -9,7 +9,7 @@ Homepage: http://tjjr.fi/sw/libsuinput
 Package: libsuinput-dev
 Section: libdevel
 Architecture: any
-Depends: libsuinput-4 (= ${binary:Version}), ${misc:Depends}
+Depends: libsuinput4 (= ${binary:Version}), ${misc:Depends}
 Description: thin userspace wrapper library on top of Linux uinput kernel module
  Libsuinput introduces several C functions which aim to help in uinput
  device configuration and usage. All functions operate on uinput file
@@ -21,7 +21,7 @@ Description: thin userspace wrapper library on top of Linux uinput kernel module
  This package provides development files.
 
 
-Package: libsuinput-4
+Package: libsuinput4
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libudev0
 Description: thin userspace wrapper library on top of Linux uinput kernel module
