@@ -10,25 +10,24 @@ Package: libsuinput-dev
 Section: libdevel
 Architecture: any
 Depends: libsuinput4 (= ${binary:Version}), ${misc:Depends}
-Description: thin userspace wrapper library on top of Linux uinput kernel module
- Libsuinput introduces several C functions which aim to help in uinput
- device configuration and usage. All functions operate on uinput file
- descriptors and therefore libsuinput just complements the standard
- ioctl-interface. User is free to mix ioctl-commands and suinput
- function calls as she sees fit. Hence, libsuinput is considered as a
- thin wrapper.
+Description: thin userspace library on top of Linux uinput kernel module
+ Uinput is Linux kernel module which allows attaching userspace device
+ drivers into the Linux kernel. However, its ioctl-interface is pretty
+ low level from an application developer's perspective. This library
+ provides a set of helper functions for making the usage of uinput
+ easier. Libsuinput can be considered thin, because it operates on the
+ same file descriptors as traditional ioctl commands.
  .
  This package provides development files.
-
 
 Package: libsuinput4
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libudev0
-Description: thin userspace wrapper library on top of Linux uinput kernel module
- Libsuinput introduces several C functions which aim to help in uinput
- device configuration and usage. All functions operate on uinput file
- descriptors and therefore libsuinput just complements the standard
- ioctl-interface. User is free to mix ioctl-commands and suinput
- function calls as she sees fit. Hence, libsuinput is considered as a
- thin wrapper.
+Description: thin userspace library on top of Linux uinput kernel module
+ Uinput is Linux kernel module which allows attaching userspace device
+ drivers into the Linux kernel. However, its ioctl-interface is pretty
+ low level from an application developer's perspective. This library
+ provides a set of helper functions for making the usage of uinput
+ easier. Libsuinput can be considered thin, because it operates on the
+ same file descriptors as traditional ioctl commands.
  .
