@@ -1,3 +1,9 @@
+libsuinput (0.5-0~tjjr1~precise1) precise; urgency=low
+
+  * Backported to Ubuntu 12.04 (Precise Pangolin)
+
+ -- Tuomas Jorma Juhani Räsänen <tuomasjjrasanen@tjjr.fi>  Sun, 01 Jul 2012 17:40:04 +0300
+
 libsuinput (0.5-0~tjjr1) unstable; urgency=low
 
   * Initial release
